@@ -19,28 +19,29 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color:  #fff6fb; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #555555; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #3fbbc0; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color:  #ff6fa1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #3fbbc0; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: var(--accent-color); /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #3fbbc0; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: var(--accent-color); /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f7fcfc;
+  --background-color:  #fff6fb;
   --surface-color: #ffffff;
 }
 
@@ -53,10 +54,10 @@
 }
 
 .accent-background {
-  --background-color: #3fbbc0;
+  --background-color: #ff6fa1;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #65c9cd;
+  --surface-color: #fff6fb;
 }
 
 /* Smooth scroll */
@@ -267,19 +268,19 @@ h6 {
 
 .header .cta-btn,
 .header .cta-btn:focus {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: #fff;
+  background: #ff6fa1;
   font-size: 14px;
   padding: 8px 20px;
-  margin: 0 5px 0 30px;
-  border-radius: 4px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
   transition: 0.3s;
 }
 
 .header .cta-btn:hover,
 .header .cta-btn:focus:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: #fff;
+  background: #FFC0CB;
 }
 
 /*--------------------------------------------------------------
@@ -572,7 +573,7 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
+  color: #FFC0CB;
   border-color: var(--accent-color);
 }
 
@@ -682,7 +683,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #ff6fa1;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -691,12 +692,12 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: #ff6fa1;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, #ff6fa1, transparent 25%);
   color: var(--contrast-color);
 }
 
@@ -895,12 +896,12 @@ section,
   transition: 0.3s;
   margin: 10px;
   border-radius: 5px;
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: #fff;
+  background: #ff6fa1;
 }
 
 .hero .btn-get-started:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background: color-mix(in srgb, #ff6fa1 90%, white 15%);
 }
 
 .hero .carousel-control-prev {
@@ -928,9 +929,9 @@ section,
   background: none;
   font-size: 26px;
   line-height: 0;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background: #ff6fa1;
   border-radius: 50px;
-  color: var(--contrast-color);
+  color: #fff;
   transition: 0.3s;
   width: 54px;
   height: 54px;
@@ -1076,14 +1077,14 @@ section,
   border-radius: 4px;
   transition: 0.3s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
+  border: 2px #ff6fa1;
+  color: #fff;
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--contrast-color);
-  color: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  background: #FFC0CB;
+  color: #fff;
+  border: 2px solid #ff6fa1;
 }
 
 /*--------------------------------------------------------------
@@ -1340,16 +1341,16 @@ section,
 }
 
 .appointment .php-email-form button[type=submit] {
-  background: var(--accent-color);
+  background: #ff6fa1;
   border: 0;
-  padding: 10px 35px;
+  padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background: #FFC0CB;
 }
 
 /*--------------------------------------------------------------
@@ -1691,8 +1692,8 @@ section,
 }
 
 .pricing .btn-buy {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: #ff6fa1;
+  color: #fff;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 4px;
@@ -1705,7 +1706,7 @@ section,
 }
 
 .pricing .btn-buy:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
 .pricing .featured h3 {
@@ -1884,8 +1885,8 @@ section,
 }
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: #fff;
+  background: #ff6fa1;
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1893,7 +1894,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: #FFC0CB;;
 }
 
 /*--------------------------------------------------------------
